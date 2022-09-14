@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>            
+        <meta charset="utf-8" />       
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Web site created using create-react-app"
+            />
+
+        <title>Lead Assignment Policy</title>        
+        <script type="text/javascript">
+           window.onmessage = function(e) {
+                if (e && e.data) {
+                    var messageId = (typeof(e.data) == 'string' && isValidJson(e.data)) ? JSON.parse(e.data).messageId : e.data.messageId;
+                    if(messageId && messageId == 'LWC') {
+                        if (e.data.tooltipData) {                       
+                            if (document.getElementById(e.data.tooltipData.nodeID) && document.getElementById(e.data.tooltipData.nodeID + "_processed")) {
+                                e.data.tooltipData.nodeID += "_span";
+                                document.getElementById(e.data.tooltipData.nodeID).setAttribute('title', e.data.tooltipData.tooltipText);
+                                if (document.getElementById(e.data.tooltipData.nodeID + "_processed") != null) {
+                                    document.getElementById(e.data.tooltipData.nodeID + "_processed").value = true; 
+                                }
+                            }
+                        } else {                     
+                            if (document.querySelector('#noter-text-area') && document.querySelector('#initial-json') && document.querySelector('#loadjson')) {
+                                document.querySelector('#noter-text-area').value = e.data;
+                                document.querySelector('#initial-json').value = e.data;
+                                document.querySelector('#loadjson').click();
+                            } else {
+                                localStorage.setItem('jsonData', e.data);
+                            }
+                        }
+                    }
+                }
+            }
+            function isValidJson(str) {
+                try {
+                    JSON.parse(str);
+                } catch (e) {
+                    return false;
+                }
+                return true;
+            }
+        </script>
+        <script defer src="index_bundle.js"></script>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
+</html>

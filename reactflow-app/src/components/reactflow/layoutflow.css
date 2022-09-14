@@ -1,0 +1,19 @@
+.options{
+    margin-top: 40% !important;
+}
+.dropdown-menu.show{
+    opacity: 100 !important;
+}
+.inputtextArea{
+    width: 100%;
+    height: 500px;
+}
+.dropdownClass {    
+    position: absolute;   
+    z-index: 10;
+    pointer-events: all !important;
+}
+.dropdown-menu.show {
+ pointer-events: all !important;
+}
+

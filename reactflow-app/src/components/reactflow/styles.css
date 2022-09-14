@@ -1,0 +1,283 @@
+.col .btn-primary{
+    border-color: #0176d3;
+    background-color: #0176d3;
+}
+
+.react-flow__node div{ font-size: 14px; color: #fff; font-weight: 600; }
+.react-flow__node.react-flow__node-circle div{ color: #333; }
+
+.circle-node{
+    padding: 13.5px;    
+    background-color: #fff;    
+    border-radius: 50px;
+    border: 1px solid #0b5cab;
+    outline: 0px;
+    box-shadow: 0px 0px 3px #0b5cab;
+    font-weight: 900;
+    color: #7d848a;
+    font-size: 11.5px;
+   
+}
+
+.rectangle-node{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    height: 100%;   
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+}
+
+.rectangle-node-text {    
+    color: white;
+    font-size: 11.5px;
+    overflow: hidden;
+    max-height: 67px;
+    overflow: hidden;
+    line-height: 13.5px;   
+    -webkit-line-clamp: 5;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;  
+    display: -webkit-box;
+}
+
+.react-flow__node-rectangle{
+    max-width: 150px;
+    max-height: 80px;
+    min-width: 150px;
+    min-height: 80px;
+    border-radius: 8px;
+    background: #00a1e0;
+    padding: 5px;
+    border: none;
+    font-size: 11.5px;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rectangle-detail-node-text,
+.rectangle-detail-node{
+    border-radius: 8px;
+    color: red;
+}
+
+
+.rectangle-detail-node-detail,
+.rectangle-detail-node-text{
+    padding: 6px 20px;
+    border-radius: 8px;
+    border: 1px solid #032d60; 
+}
+
+.rectangle-detail-node-text{
+    position: relative;
+    background-color: #032d60;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.rectangle-detail-node-text::after{
+    width: 0;
+    height: 0;
+    left: 50%;
+    content: "";
+    bottom: -7px;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, 0);
+    border-top: 8px solid #032d60;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.react-flow__node .rectangle-detail-node-detail{
+    font-size: 11.5px;
+    color: #032d60;
+    background-color: #fff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.diamond-node-text {
+    z-index: 10;
+    margin: 0px;        
+    height: 72px;
+    color:white;    
+    text-align: center;
+    position: relative;
+    text-overflow: ellipsis;
+    transform: rotate(-45deg) !important;
+    /* Safari */
+    -webkit-transform: rotate(-45deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-45deg);
+
+    /* IE */
+    -ms-transform: rotate(-45deg);
+
+    /* Opera */
+    -o-transform: rotate(-45deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    top: 28px;
+    left: 4px;
+    max-width: 90%;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11.5px !important;
+    -webkit-box-orient: vertical;
+    white-space: pre;
+}
+
+.diamond-node-text > span {
+    max-height: 40px;
+    overflow: hidden;
+    line-height: 13.5px;
+    display: flow-root;    
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+    font-size: 11.5px;
+    text-overflow: ellipsis;    
+}
+
+.diamond-text-wrap > span {    
+    display: -webkit-box;
+    white-space: pre-wrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.diamond-node{
+    width: 98px;
+    height: 98px;
+    outline: 0px;
+    display:block;
+    word-break: break-all;
+    border-radius: 8.75px;
+    background-color:#0070d2;
+    transform: rotate(45deg) !important;    
+    box-shadow: #c3c3c3 0px 0px 3px 3px;
+}
+
+.react-flow__edges{ overflow: inherit; }
+.react-flow__edge-path{
+    stroke-width: 2;
+    stroke: #a8b7c6;
+}
+
+.options {
+    margin-top: 5% !important;
+}
+
+.react-flow {
+    overflow: hidden !important; 
+    min-height: auto;
+    height: 100vh;
+}
+
+.react-flow__node-output .react-flow__handle {
+    background: #1a192b;
+}
+
+.react-flow__node-input .react-flow__handle {
+    background: #1a192b;
+}
+
+.react-flow__node react-flow__node-rectangle selectable {
+   box-shadow: #c3c3c3 0px 0px 3px 1px;    
+}
+
+.triangle-node {
+    background-color: #9ca8b3;
+    width: 0px;
+    height: 0px;
+    border-style: inset;
+    border-width: 0 50px 80px 50px;
+    border-color: transparent transparent #9ca8b3 transparent;
+    float: left;
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+.second-actions {
+    white-space: pre;
+    display : flow-root!important;
+}
+
+.react-flow__minimap-mask{
+    fill : #eaf0f9;
+}
+
+.react-flow__minimap-node {
+    fill : #c5dbfb;
+    stroke: black;
+}
+
+.rectangle-node-textarea-parent-padding {
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    overflow: auto;
+    padding-left : 3%;
+}
+
+.rectangle-node-textarea {
+   background-color:#00a1e0;   
+   border: none;
+   outline: none;   
+   color: white;
+   width: 98%;
+   font-size: 11.5px;    
+   overflow: hidden;
+   line-height: 13.5px;
+   resize: none;
+    white-space: normal;
+    height: 100%;
+    -moz-text-align-last: center; /* Firefox 12+ */
+    text-align-last: center;
+    word-break: break-all;
+    margin:0;
+    padding:0;
+    -webkit-line-clamp: unset;
+        
+}
+
+.diamond-node-textarea {
+   background-color:#0170d2;   
+   border: none;
+   outline: none;
+   color: white;
+   font-size: 11.5px;    
+   max-height: 67px;
+   overflow: hidden;
+   line-height: 13.5px;
+   resize: none;
+    white-space: normal;    
+    
+    -moz-text-align-last: center; /* Firefox 12+ */
+    text-align-last: center;
+    word-break: break-all;
+    text-align: justify;
+    margin:0;
+    padding:0;
+}
