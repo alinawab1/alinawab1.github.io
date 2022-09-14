@@ -22,9 +22,8 @@
 			e && "LWC" == e && (t.data.tooltipData ? document.getElementById(t.data.tooltipData.nodeID) && document.getElementById(t.data.tooltipData.nodeID + "_processed") && (t.data.tooltipData.nodeID += "_span", document.getElementById(t.data.tooltipData.nodeID).setAttribute("title", t.data.tooltipData.tooltipText), null != document.getElementById(t.data.tooltipData.nodeID + "_processed") && (document.getElementById(t.data.tooltipData.nodeID + "_processed").value = !0)) : document.querySelector("#noter-text-area") && document.querySelector("#initial-json") && document.querySelector("#loadjson") ? (document.querySelector("#noter-text-area").value = t.data, document.querySelector("#initial-json").value = t.data, document.querySelector("#loadjson").click()) : localStorage.setItem("jsonData", t.data))
 		}
 	}
-	</script>
-	<script defer="defer" src="31d6cfe0d16ae931b73c.js"></script>
-	<script defer="defer" src="index_bundle.js"></script>
+	</script>	
+	<script defer="defer" src="reactflow-app/dist/index_bundle.js"></script>
 </head>
 
 <body>
